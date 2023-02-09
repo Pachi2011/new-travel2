@@ -1,0 +1,115 @@
+<div class="col-md-6 offset-md-3 mt-5">
+<h1>Edit your review </h1>
+<form action="/review/{{editReview._id}}/edit" method="POST"enctype="multipart/form-data" >
+  <div class="form-group row py-sm-2 mb-0">
+    <div class="col-auto">
+<label> Type Of Experience: 
+      <input
+        type="text"
+        class="form-control"
+        name="typeOfExperience"
+        placeholder="Type Of Experience"
+        value="{{editReview.typeOfExperience}}"
+      />
+        </label>
+    </div>
+    <div class="form-group row py-sm-2 mb-0">
+      <label> Headline: 
+      <input
+        type="text"
+        class="form-control"
+        name="headline"
+        placeholder="Headline"
+        value="{{editReview.headline}}"
+      />
+        </label>
+    </div>
+    <div class="form-group row py-sm-2 mb-0">
+      <label> Place Name: 
+        <input
+          type="text"
+          class="form-control"
+          name="placeName"
+          placeholder="Place Name"
+          value="{{editReview.placeName}}"
+        />
+      </label>
+    </div>
+    <div class="form-group row py-sm-2 mb-0">
+      <label>Add Images 
+        <input
+          type="file"
+          class="form-control"
+          name='review-cover-image'
+          placeholder="Add Picture"
+          value="{{editReview.imageUrl}}"
+        />
+      </label>
+    </div>
+    {{!-- <div class="col-auto ">
+      <input type="text" class="form-control" name="picture" placeholder="Add Picture" value="{{picture}}">
+    </div>  --}}
+    <div class="form-group row py-sm-2 mb-0">
+      <label> City: 
+      <input
+        type="text"
+        class="form-control"
+        name="city"
+        placeholder="City"
+        value="{{editReview.city}}"
+      />
+        </label>
+    </div>
+    <div class="form-group row py-sm-2 mb-0">
+      <label>Country: 
+      <input
+        type="text"
+        class="form-control"
+        name="contry"
+        placeholder="Country"
+        value="{{editReview.contry}}"
+      />
+        </label>
+    </div>
+    <div class="form-group row py-sm-2 mb-0">
+      <label> Price: 
+      <input
+        type="text"
+        class="form-control"
+        name="price"
+        placeholder="Price"
+        value="{{editReview.price}}"
+      />
+        </label>
+    </div>
+    <div class="form-group row py-sm-2 mb-0">
+      <label> Rating 1-5: 
+      <input
+        type="text"
+        class="form-control"
+        name="rating"
+        placeholder="Rating 1-5"
+        value="{{editReview.rating}}"
+      />
+        </label>
+    </div>
+    <div class="form-group row py-sm-2 mb-0">
+      <label> Write your review here: 
+      <textarea
+        id="reviewText"
+        class="form-control"
+        name="reviewText"
+        rows="4"
+        cols="50"
+        placeholder="Write your review here"
+        value = "{{editReview.reviewText}}"
+      >{{editReview.reviewText}}</textarea>  
+        </label>  
+    </div>
+  </div>
+
+  <button type="submit" class="buttonStyle1">Edit Review</button>
+</form>
+
+<br>
+<br>

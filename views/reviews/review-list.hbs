@@ -1,0 +1,38 @@
+<div id="reviewListTopDiv" class="gradient-custom-2">
+<h1 id="h1_review-list">Review List</h1>
+ </div>
+{{#each allReviews}}
+  <section class="gradient-custom-2">
+    
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="card mb-3" style="max-width: 50%; padding: 20px; margin: 20px;">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+
+              {{! <div id="review_list" class="card bg-light border-info mb-3" style="width: 18rem;"> }}
+              <img
+                src="{{imageUrl}}"
+                class="card-img-top"
+                alt="{{title}}"
+                style="height: 300px;"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">{{headline}}</h5>
+                <p class="card-text">Type of Review: {{typeOfExperience}}</p>
+                <p class="card-text">City: {{city}}, Country: {{contry}}</p>
+                <p class="card-text">Rating (1 - 5): {{rating}}</p>
+                <a
+                  href="/review/{{id}}"
+                  class="btn btn-outline-info"
+                >Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+   
+  </section>
+
+{{/each}}

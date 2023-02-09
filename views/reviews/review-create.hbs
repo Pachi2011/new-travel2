@@ -1,0 +1,107 @@
+<div class="col-md-6 offset-md-3 mt-5">
+       <h1>Create your review {{userInSession.username}}!</h1>
+        <br>
+        
+        
+        <form accept-charset="UTF-8" action="/review/create" method="POST" enctype="multipart/form-data" >
+          <div class="form-group row py-sm-2 mb-0">
+           <label>Type Of Experience:  
+            <input  type="text"
+        class="form-control"
+        name="typeOfExperience"
+        {{!-- placeholder="Type Of Experience" --}}
+        value="{{typeOfExperience}}" required="required">
+           </label>
+        <p style="font-size: 11px; margin-bottom: 0px;">Select: "Restaurant", "Hotel", "Festival", "Concert", "Resort", "Other"</p>
+
+          </div>
+          <div class="form-group row py-sm-2 mb-0">
+            <label>Headline: 
+            <input type="text"
+        class="form-control"
+        name="headline"
+        {{!-- placeholder="Headline" --}}
+        value="{{headline}}">
+            </label>
+          </div>
+          <div class="form-group row py-sm-2 mb-0">
+             <label>Place Name: 
+            <input type="text"
+        class="form-control"
+        name="placeName"
+        {{!-- placeholder="Place Name" --}}
+        value="{{placeName}}">
+             </label>
+          </div>
+
+          <div class="form-group row py-sm-2 mb-0">
+            <label>City:
+           <input
+        type="text"
+        class="form-control"
+        name="city"
+        {{!-- placeholder="City" --}}
+        value="{{city}}">
+            </label>
+    </div>
+  
+  <div class="form-group row py-sm-2 mb-0" >
+    <label>Country:
+      <input 
+        type="text"
+        class="form-control"
+        name="contry"
+        {{!-- placeholder="Country" --}}
+        value="{{contry}}">
+    </label>
+    </div>
+    <div class="form-group row py-sm-2 mb-0">
+      <label>Price:
+      <input
+        type="text"
+        class="form-control"
+        name="price"
+        {{!-- placeholder="Price" --}}
+        value="{{price}}">
+      </label>
+      
+    </div>
+    <div class="form-group row py-sm-2 mb-0">
+       <label>Rating 1-5:
+      <input
+        type="text"
+        class="form-control"
+        name="rating"
+        {{!-- placeholder="Rating 1-5" --}}
+        value="{{rating}}">
+       </label>
+    </div>
+    <div class="col row py-sm-2 mb-0">
+       <label>Write your review here:
+      <textarea
+        id="reviewText"
+        class="form-control"
+        name="reviewText"
+        rows="4"
+        cols="50"
+        {{!-- placeholder="Write your review here" --}}
+        value="{{reviewText}}">
+      </textarea>
+       </label>
+    </div>
+     <hr>
+          <div class="col-auto">
+    
+      
+        <label>Add image: 
+          <input type="file" name="review-cover-image" class="form-control"/>
+        </label>
+      </div>
+          <hr>
+          <button type="submit" class="buttonStyle1">Submit</button>
+        </form>
+        <br>
+        <br>
+  </div>
+
+  

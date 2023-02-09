@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  {{!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> --}}
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Document</title>
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link
+      rel="stylesheet"
+      href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
+</head>
+<body>
+
+ {{!-- <div id="user_profile">
+
+{{#if userInSession}}
+<h1 class="display-name">{{userInSession.username}}</h1>
+   --}}
+    
+{{!-- {{#each review_id}}
+  <br />
+  <div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="{{imageUrl}}" alt="Card image cap" />
+    <div class="card-body">
+      <h5 class="card-title">{{headline}}</h5>
+      <p class="card-text">Type of Review: {{typeOfExperience}}</p>
+      <p class="card-text">City: {{city}}, Country: {{contry}}</p>
+      <p class="card-text">Rating (1 - 5): {{rating}}</p>
+      <a href="/review/{{_id}}" class="btn btn-outline-info">Details</a>
+    </div>
+  </div>
+  <br />
+{{/each}} 
+
+   <form action="/profile/{{userInSession._id}}/delete" method="POST">
+    <button class="btn btn-outline-info"> Delete account </button>
+  </form>
+  <br />
+  <form action="/profile/{{userInSession._id}}/edit" method="GET">
+    <button class="btn btn-outline-info"> Edit profile </button>
+
+  </form>
+
+{{else}}
+ 
+
+  <br /><p>Still no logged in user, sorry!</p>
+
+{{/if}}
+</div> 
+
+        
+</body>
+</html> --}}
+    
+
+
+    <div class="container">
+  <div class="row">
+    <div class="col-sm-3 1">
+
+      {{#if userInSession}}
+      <br>
+      <br>
+<div class="card UserCard" style="width: 18rem;">
+  <img class="card-img-top" src="..\images\img\IMG_0411.JPG" alt="Card image cap">
+  <div class="card-body UserCard">
+    <h5 class="card-title">{{userInSession.username}}</h5>
+    <p class="card-text"> {{email}} </p>
+  </div>
+  
+  <div class="card-body UserCard">
+
+    <form action="/profile/{{userInSession._id}}/delete" method="POST">
+    <button class="btn btn-outline btnUserOne "> Delete account </button>
+  </form>
+
+ <br>
+
+    <form action="/profile/{{userInSession._id}}/edit" method="GET">
+    <button class="btn btn-outline btnUserOne"> Edit profile </button>
+
+  </form>
+    
+  </div>
+</div>
+    </div>
+
+
+
+    <div class="col-sm-6 2">
+
+     <br>
+      
+
+        {{#each review_id}}
+  <br />
+  <div class="card row flex-row-reverse" style="width: 42rem;">
+    <img class="col-lg-4 card-img-end img-fluid p-0 userCardBody" src="{{imageUrl}}" alt="Card image cap" />
+    
+    <div class="col-lg-8 card-body">
+      <h5 class="card-title">{{headline}}</h5>
+      <p class="card-text">Type of Review: {{typeOfExperience}}</p>
+      <p class="card-text">City: {{city}}, Country: {{contry}}</p>
+      <p class="card-text">Rating (1 - 5): {{rating}}</p>
+      <a href="/review/{{_id}}" class="btn btn-outline-info">Details</a>
+    </div>
+  </div>
+  <br />
+{{/each}} 
+    </div>
+
+    <div class="col-sm-3 3">
+      {{!-- One of three columns --}}
+      
+    {{!-- <div class="card" style="width: 18rem;">
+  <div class="card-header">
+    Featured
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Cras justo odio</li>
+    <li class="list-group-item">Dapibus ac facilisis in</li>
+    <li class="list-group-item">Vestibulum at eros</li>
+  </ul>
+</div> --}}
+
+
+    
+    </div>
+
+    <div class="col-sm 4">
+      {{!-- One of three columns --}}
+    </div>
+
+    <div class="col-sm 5">
+      {{!-- One of three columns --}}
+      
+    </div>
+
+    <div class="col-sm 6">
+      {{!-- One of three columns --}}
+    </div>
+
+    <div class="col-sm 7">
+      {{!-- One of three columns --}}
+      
+
+    </div>
+
+    <div class="col-sm 8">
+      {{!-- One of three columns --}}
+    </div>
+
+    <div class="col-sm 9">
+      {{!-- One of three columns --}}
+    </div>
+
+    <div class="col-sm 10">
+      {{!-- One of three columns --}}
+      
+
+{{else}}
+ 
+
+  <br /><p>Still no logged in user, sorry!</p>
+
+{{/if}}
+
+    </div>
+
+    <div class="col-sm 11">
+      {{!-- One of three columns --}}
+    </div>
+
+    <div class="col-sm 12">
+      {{!-- One of three columns --}}
+    </div>
+
+  </div>
+
+  </body>
+</html> 
+    

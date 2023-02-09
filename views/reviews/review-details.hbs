@@ -1,0 +1,123 @@
+<section class=" gradient-custom-2">
+  <div class="container py-5 ">
+    <div class="row d-flex justify-content-center align-items-center ">
+      <div class="col col-lg-9 col-xl-7">
+        <div class="card">
+          <div
+            class="rounded-top text-white d-flex flex-row"
+            style="background-color: #35959c61; "
+          >
+        
+            <div class="ms-3" >
+              
+            </div>
+          </div>
+
+          <div class="p-4 text-black" style="background-color: #c0d9f386;">
+            <div class="d-flex justify-content-end text-center py-1">
+              
+              
+            </div>
+          </div>
+
+
+          <div class="card-body p-4 text-dark-grey">
+            <div class="mb-5">
+              <h1 id="headlineTitle"> {{headline}}</h1>
+              <h3 id="typeOfExperienceTitle">{{typeOfExperience}}</h3>
+
+              <div class="p-4" style="background-color: #c0d9f386;">
+                <p class="font-italic mb-1">{{placeName}}</p>
+                <p class="font-italic mb-1">{{city}}, {{contry}} </p>
+                 <p class="font-italic mb-1">  {{#each country.currencies}} 
+                    
+                    {{this.name}}
+                    {{this.symbol}}
+                    {{/each}} </p>
+
+                    <p class="font-italic mb-1">{{country.capital}} </p>
+
+                    {{!-- <img src= "{{country.flags.svg}} " alt="not loading"> --}}
+
+                    {{!-- {{#each countries}}
+                    {{this.capital}}
+                     
+                     {{/each}}  --}}
+
+                     
+                <p class="font-italic mb-0">Price: {{price}}</p>
+                <p class="font-italic mb-0">Rating(1-5) : {{rating}}</p>
+                <br />
+                <p class="font-italic mb-0">{{reviewText}}
+                </p>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-4">
+             
+            </div>
+            <div class="row g-2">
+              <div class="col mb-2">
+                <img
+                  src={{imageUrl}}
+                  alt="image 1"
+                  class="w-100 rounded-3"
+                />
+              </div>
+       
+
+
+<a id="al" href="/review/{{_id}}/edit" class="btn btn-outline-info btnEditDitails">
+  Edit review</a>
+
+                
+<form action="/review/{{_id}}/delete" method="post">
+  <button type="submit" class="btn btn-outline-info"> Delete Review</button>
+</form>
+              
+ <div class="conteiner pt-5">
+   <div class="container">
+    <form action="/review/{{_id}}/comments" method="POST"> 
+
+    <textarea class='form-control' name="text" placeholder="Comment"></textarea>
+      <div class="text-right">
+        <button type="submit" class="buttonStyle2">Save</button>
+      </div>
+
+
+    </form>
+   </div>
+ </div>
+ {{#each comments}}
+ <div class="conteiner pt-5">
+   <div class="container">
+    <form action="/review/{{_id}}/comments" method="POST"> 
+
+    <p id="commentDate">{{date}}</p>
+    <textarea class='form-control' name="text" placeholder="Comment"> {{text}} </textarea>
+     
+
+
+    </form>
+   </div>
+ </div>
+ {{/each}}
+
+ 
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+    </form>
+   </div>
+ </div>
+</section>
+
+
+

@@ -1,0 +1,339 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Fancy Font', sans-serif;
+}
+
+.body {
+  
+  background-color: #aed9e464; /* Light blue */
+  color: rgba(78, 75, 74, 0.783);
+  
+}
+
+
+a {
+  color: #00b7ff;
+}
+
+h1 {
+  color: #135054be;
+
+}
+#typeOfExperienceTitle{
+
+  color:rgb(41, 109, 112);
+  padding: 10px;
+}
+
+#headlineTitle{
+
+  color: rgb(41, 109, 112);
+  padding: 10px;
+}
+
+.gradient-custom-2 {
+  /* fallback for old browsers */
+  background: #fbc2eb;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(
+    to right,
+    rgba(251, 194, 235, 1),
+    rgba(166, 193, 238, 1)
+  );
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(
+    to right,
+    rgba(251, 194, 235, 1),
+    rgba(166, 193, 238, 1)
+  );
+}
+
+.logoImg {
+  height: 60px;
+  width: 160px;
+  margin-left: 50px;
+}
+
+nav {
+  margin-bottom: 5px;
+}
+
+#intro {
+  background-image: url("../images/img/BackgroundAlex.JPG");
+  height: 100vh;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+@media (min-width: 992px) {
+  #intro {
+    margin-top: -58.59px;
+  }
+}
+
+.mask {
+  height: 100vh;
+}
+
+#form{
+
+  width: 50%; 
+  margin: 0 auto;
+  padding-top: 300px;
+}
+
+#form_signup{
+
+  width: 50%; 
+  margin: 0 auto;
+  padding-top: 300px;
+  
+}
+
+#user_profile{
+
+  position: relative;
+
+  left: 30%;
+  
+}
+
+
+#h1_review-list{
+
+  width: 20%; 
+  margin: 0 auto;
+ padding: 40px;
+ color: #135054be;
+
+}
+
+#commentDate{
+
+  font-size: 12px;
+}
+
+.buttonStyle1{
+
+margin-top: 30px; 
+cursor: pointer;
+border: 1px solid;
+border-color:#a2d3e5 ;
+border-radius: 12px;
+background-color: transparent;
+
+height: 50px;
+width: 180px;
+color: rgba(78, 75, 74, 0.783);
+font-size: 20px;
+
+box-shadow: 0 2px 2px rgba(0, 0, 0, 0.6);
+
+background-image: linear-gradient(to right,#94dffa 0%, #b8e0ef 51%, #94dffa 100%);
+
+transition-duration: 0.4s;
+
+}
+
+/* .buttonStyle1:hover{
+  background-color: green;
+
+} */
+
+.text-white{
+  margin-right: 850px;
+  font-family: 'Merriweather Sans', sans-serif;
+  
+
+}
+
+.mb-3 {
+  
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+.mb-4{
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+.nav-link {
+  font-family: 'Merriweather Sans', sans-serif;
+ 
+  
+
+}
+
+.nav-item{
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.form-group{
+
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+
+.LogoutBTN{
+
+  margin-left: 680px;
+cursor: pointer;
+border: 1px solid;
+border-color:#a2d3e5 ;
+border-radius: 12px;
+background-color: transparent;
+/* height: 50px;
+width: 180px; */
+color: rgba(78, 75, 74, 0.783);
+font-size: 20px;
+
+box-shadow: 0 2px 2px rgba(0, 0, 0, 0.6);
+
+background-image: linear-gradient(to right,#94dffa 0%, #b8e0ef 51%, #94dffa 100%);
+}
+
+/* .loginBody{
+  background-image: url('../images/img/Back-for-sign-login.PNG');
+}  */
+
+
+.UserCard {
+  background-color:#eaf8fd;
+}
+
+
+.btnUserOne {
+  border-color:#a2d3e5 ;
+
+background-color: transparent;
+
+color: rgba(113, 105, 103, 0.783);
+
+
+box-shadow: 0 2px 2px rgba(97, 93, 93, 0.6);
+
+background-image: linear-gradient(to right,#94dffa 0%, #b8e0ef 51%, #94dffa 100%);
+}
+
+.UserCardStyle{
+  border-radius: 20%
+}
+
+
+.buttonStyle2{
+
+  margin-top: 30px; 
+  
+  /* color: #2ea1da; */
+  cursor: pointer;
+  border: 1px solid;
+  border-color:#a2d3e5 ;
+  border-radius: 13px;
+  background-color: transparent;
+  
+  height: 30px;
+  width: 100px;
+  color: rgba(78, 75, 74, 0.783);
+  font-size: 20px;
+  
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.6);
+  
+  background-image: linear-gradient(to right,#94dffa 0%, #b8e0ef 51%, #94dffa 100%);
+  
+  transition-duration: 0.4s;
+  
+  }
+
+  #signupBg {
+    background-image: url("/images/img/Back-for-sign-login.PNG");
+    height: 100vh;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    margin-top: 0px;
+  }
+
+  #loginBg{
+    background-image: url("/images/img/Back-for-sign-login.PNG");
+    height: 100vh;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    margin-top: 0px;
+  }
+  
+  
+  .card-img-end{
+    /* display: flex;
+    flex-wrap: nowrap;
+    padding: 5px; */
+
+    
+    border-bottom-left-radius: calc(.25rem - 3px);
+    border-top-left-radius: calc(.25rem - 1px);
+    float: left;
+    padding-right: 1em;
+      /* margin-bottom: -1.25em; */
+    object-fit: cover;
+    }
+  
+
+  .btnEditDitails {
+
+    width: 40px;
+  }
+
+
+.buttonStyle22{
+
+  margin-top: 30px; 
+  
+  /* color: #2ea1da; */
+  cursor: pointer;
+  border: 1px solid;
+  border-color:#a2d3e5 ;
+  border-radius: 13px;
+  background-color: transparent;
+  
+  height: 30px;
+  width: 40px;
+  color: rgba(78, 75, 74, 0.783);
+  font-size: 20px;
+  
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.6);
+  
+  background-image: linear-gradient(to right,#94dffa 0%, #b8e0ef 51%, #94dffa 100%);
+  
+  transition-duration: 0.4s;
+
+}
+
+.buttonStyle33{
+
+  margin-top: 30px; 
+  padding: 50px;
+  
+  /* color: #2ea1da; */
+  cursor: pointer;
+  border: 1px solid;
+  border-color:#a2d3e5 ;
+  border-radius: 13px;
+  background-color: transparent;
+  
+  height: 30px;
+  width: 40px;
+  color: rgba(78, 75, 74, 0.783);
+  font-size: 20px;
+  
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.6);
+  
+  background-image: linear-gradient(to right,#94dffa 0%, #b8e0ef 51%, #94dffa 100%);
+  
+  transition-duration: 0.4s;
+
+}
